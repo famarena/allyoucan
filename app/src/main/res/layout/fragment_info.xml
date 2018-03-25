@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.itfs.myapplication.fragment.InfoFragment">
+
+
+    <TextView
+        android:id="@+id/testoprezzo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/progressBar4"
+        android:layout_alignStart="@+id/testoprezzo4"
+        android:layout_marginBottom="11dp"
+        android:text="ATMOSFERA"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/testoprezzo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBottom="@+id/textOR"
+        android:layout_alignStart="@+id/testoprezzo3"
+        android:text="SERVIZIO"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/testoprezzo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignBaseline="@+id/textprz"
+        android:layout_alignBottom="@+id/textprz"
+        android:layout_marginStart="22dp"
+        android:layout_toEndOf="@+id/progressBar2"
+        android:text="CUCINA"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/descrizioneristorante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="DESCRIZIONE"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/descrizioneristorante2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="DESCRIZIONE"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/textDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descrizioneristorante"
+        android:layout_marginLeft="18dp"
+        android:layout_centerHorizontal="true"
+        android:text="Catena di pizzerie italiane nata nel 1953 in America arriva in Italia con 70 nuovi ristoranti! Prova i nostri 48 gusti di pizze dolci e salate! Le bevande sono escluse dal prezzo allyoucaneat.  " />
+
+
+    <TextView
+        android:id="@+id/testoprezzo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignStart="@+id/textDesc"
+        android:layout_below="@+id/textDesc"
+        android:layout_marginTop="25dp"
+        android:text="PREZZO"
+        android:textColor="@color/orange" />
+
+
+    <TextView
+        android:id="@+id/textprz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/testoprezzo"
+
+        android:layout_alignStart="@+id/textOR"
+        android:text="19,90 " />
+
+    <TextView
+        android:id="@+id/textvieww"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBaseline="@+id/textOR"
+        android:layout_alignBottom="@+id/textOR"
+        android:layout_alignStart="@+id/testoprezzo"
+        android:text="ORARI"
+        android:textColor="@color/orange" />
+
+    <TextView
+        android:id="@+id/textOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testoprezzo"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/textvieww"
+        android:text="12,45-15,45
+        18,30 - 22,30" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBar3"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/textOR" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBar2"
+        android:layout_alignTop="@+id/textOR" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/progressBar3"
+        android:layout_below="@+id/testoprezzo4"
+        android:layout_marginTop="11dp" />
+
+</RelativeLayout>

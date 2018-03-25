@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.android.itfs.myapplication.dialog.LoginDialog"
+    android:background="@color/black"
+    >
+
+
+    <TextView
+        android:id="@+id/testo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Inserisci le credenziali con cui ti sei registrato neostra app!"
+        android:textColor="@color/orange" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/testo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Mail"
+        android:inputType="textEmailAddress" />
+
+
+    <EditText
+        android:id="@+id/pwd"
+
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mail"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/rounded"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd">
+
+
+    <Button
+        android:id="@+id/accediDialog"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/buttonstyle"
+        android:textColor="@color/orange"
+        android:text="ACCEDI" />
+
+
+        <Button
+            android:id="@+id/registrati"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/buttonstyle"
+            android:text="REGISTRATI"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>
